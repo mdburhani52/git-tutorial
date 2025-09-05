@@ -1,6 +1,6 @@
-For windows setup, I ran following commands to work for me
+# For windows setup, I ran following commands to work for me
 
-Open git bash and run the following commands
+# Open git bash and run the following commands
 -> ssh-keygen -t rsa -b 4096 -C "myemail@gmail.com"
 
 -> ls ~/.ssh (to check if 25519 files are generated or not if not then run below command)
@@ -11,5 +11,5 @@ Open git bash and run the following commands
 -> ssh-add -l
 -> cat ~/.ssh/id_ed25519.pub
 
-##copy the string in git provider ssh
+## copy the string in git provider ssh
 
