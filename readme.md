@@ -17,3 +17,16 @@
   
 ### copy the string in git provider ssh
 
+-------------------------
+## Run this command in git-tutorial folder
+- git remote add origin git@github.com:mdburhani52/git-tutorial.git
+- git remote -v
+- git fetch
+
+## create your any file and 
+- git add .
+- git commit -m "test commit"
+- git push origin branchname
+
+
+
