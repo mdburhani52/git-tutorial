@@ -4,9 +4,10 @@
 - ssh-keygen -t rsa -b 4096 -C "myemail@gmail.com"
 
 - ls ~/.ssh (to check if 25519 files are generated or not if not then run below command)
-- ssh-keygen -t ed25519 -C "myemail@gmail.com"
+- ssh-keygen -t ed25519 -C "myemail@gmail.com" 
 
-- ssh-add ~/.ssh/id_ed25519
+## id_ed25519 is a more modern, stronger, and faster encryption algorithm for SSH keys.
+- ssh-add ~/.ssh/id_ed25519 
 - ssh-add "/c/Users/locationname/.ssh/id_ed25519"
 - ssh-add -l
 - cat ~/.ssh/id_ed25519.pub
