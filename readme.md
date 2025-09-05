@@ -11,7 +11,7 @@
 - ssh-keygen -t ed25519 -C "myemail@gmail.com"
 - eval "$(ssh-agent -s)"
 - ssh-add ~/.ssh/id_ed25519 
-- ssh-add -l
+- ssh-add -l (Verify the key is added)
 - cat ~/.ssh/id_ed25519.pub
 
   
