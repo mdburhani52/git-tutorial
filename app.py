@@ -14,11 +14,18 @@ def home():
 
 @app.route('/submittodoitem', methods=['POST'])
 def submit_todo():
+    
+    item_id = request.form.get('itemId')
+    item_uuid = request.form.get('itemUUId')
+    item_hash = request.form.get('itemHash')
     item_name = request.form.get('itemName')
     item_desc = request.form.get('itemDescription')
 
     if item_name and item_desc:
         collection.insert_one({
+            'id':item_id,
+            'uuid':item_uuid,
+            'hash':item_hash
             'name': item_name,
             'description': item_desc
         })
