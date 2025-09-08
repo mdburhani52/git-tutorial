@@ -1,12 +1,16 @@
 <!-- templates/todo.html -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>To-Do Form</title>
 </head>
+
 <body>
     <h1>To-Do Item</h1>
     <form action="/submittodoitem" method="POST">
+        <label>Item ID:</label><br>
+        <input type="number" name="itemId" required><br><br>
         <label>Item Name:</label><br>
         <input type="text" name="itemName" required><br><br>
         <label>Item Description:</label><br>
@@ -14,4 +18,5 @@
         <input type="submit" value="Submit">
     </form>
 </body>
+
 </html>
